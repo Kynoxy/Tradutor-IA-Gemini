@@ -4,9 +4,9 @@ import google.generativeai as gen_ai
 
 api_keey = st.secrets["GOOGLE_API_KEY"]
 
-genai.configure(api_key=api_keey)
+gen_ai.configure(api_key=api_keey)
 
-model = genai.GenerativeModel("gemini-1.5-pro")
+model = gen_ai.GenerativeModel("gemini-1.5-pro")
 
 st.title("Gemini FIPP Translator")
 
