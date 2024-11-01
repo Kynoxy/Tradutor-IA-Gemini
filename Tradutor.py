@@ -1,10 +1,10 @@
 
 import streamlit as st
-import google.generativeai as genai
+import google_generativeai
 
-google_API_KEY = "AIzaSyDi4oeQQrDvR0EgthhIXurIsdhgxse15Lk"
+api_keey = st.secrets["GOOGLE_API_KEY"]
 
-genai.configure(api_key=google_API_KEY)
+genai.configure(api_key=api_keey)
 
 model = genai.GenerativeModel("gemini-1.5-pro")
 
