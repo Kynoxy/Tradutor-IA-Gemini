@@ -1,6 +1,6 @@
 
 import streamlit as st
-import google_generativeai
+import google.generativeai as gen_ai
 
 api_keey = st.secrets["GOOGLE_API_KEY"]
 
